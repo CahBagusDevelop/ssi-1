@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{{ site_name }}{% endblock %}</title>
+    {% include 'layout-header-login.html' %}
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </div><!--/.wrapper-->
+    
+    {% include 'layout-footer.html' %}
+    {% block js %}{% endblock %}
+</body>
